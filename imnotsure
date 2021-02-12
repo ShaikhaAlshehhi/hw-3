@@ -1,0 +1,45 @@
+
+
+class Star {
+
+  
+  //int xCenter = width/2;
+  //int yCenter = height/2;
+  float yUnique = random(height);
+  float xUnique = random(width);
+  
+  void display(float r){
+  
+    ellipse(xUnique, yUnique, r, r);
+  
+  
+  }
+ 
+
+
+}
+
+
+
+
+
+
+
+void setup() {
+
+  size (300, 300);
+  smol = new Star();
+
+}
+
+
+void draw(){
+
+  background(0, 17, 46);
+  
+  for (int i = 0; i < 100; i++){
+    
+    smol.display(2);
+
+  }
+} 
